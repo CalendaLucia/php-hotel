@@ -18,42 +18,42 @@ $hotels = [
      'description' => 'Hotel Belvedere Description',
      'parking' => 'true',
      'rating' =>  4,
-     'distance_from_the_center' =>  10.4
+     'distance_to_the_center' =>  10.4
  ],
  [
      'name' => 'Hotel Futuro',
      'description' => 'Hotel Futuro Description',
      'parking' => 'true',
      'rating' =>  2,
-     'distance_from_the_center' =>  2
+     'distance_to_the_center' =>  2
  ],
  [
      'name' => 'Hotel Rivamare',
      'description' => 'Hotel Rivamare Description',
      'parking' => 'false',
      'rating' =>  1,
-     'distance_from_the_center' =>  1
+     'distance_to_the_center' =>  1
  ],
  [
      'name' => 'Hotel Bellavista',
      'description' => 'Hotel Bellavista Description',
      'parking' => 'false',
      'rating' =>  5,
-     'distance_from_the_center' =>  5.5
+     'distance_to_the_center' =>  5.5
  ],
  [
      'name' => 'Hotel Milano',
      'description' => 'Hotel Milano Description',
      'parking' => 'true',
      'rating' =>  2,
-     'distance_from_the_center' =>  50
+     'distance_to_the_center' =>  50
  ],
 ];
 
 
 // Tabella Bootstrap per mostrare gli hotels
 echo "<table class='table'>";
-echo "<thead><tr><th>Name</th><th>Description</th><th>Parking</th><th>Rating</th><th>Distance From The Center</th></tr></thead>";
+echo "<thead><tr><th>Name</th><th>Description</th><th>Parking</th><th>Rating</th><th>Distance to The Center</th></tr></thead>";
 echo "<tbody>";
 foreach ($hotels as $hotel) {
     echo "<tr>";
@@ -61,7 +61,7 @@ foreach ($hotels as $hotel) {
     echo "<td>{$hotel['description']}</td>";
     echo "<td>{$hotel['parking']}</td>";
     echo "<td>{$hotel['rating']}</td>";
-    echo "<td>{$hotel['distance_from_the_center']}</td>";
+    echo "<td>{$hotel['distance_to_the_center']}</td>";
     echo "</tr>";
 }
 echo "</tbody></table>";
